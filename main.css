@@ -84,3 +84,8 @@ ul li {
 .top-header {
   display: flex;
 }
+
+.home-image {
+  width: 100%;
+  height: 35vh;
+}
