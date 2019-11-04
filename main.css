@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.pace-logo {
+  width: 25%;
+  padding: 3%;
+  margin-left: 3%;
+}
+
+.donate-header {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+  width: 15%;
+  height: 2%;
+  background: #dd004b;
+  border-radius: 17%;
+  padding: 2%;
+  margin-top: 13%;
+  margin-left: 12%;
+}
+
+.menu {
+  font-family: 'Lato', sans-serif;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* --- MOBILE/HAMBURGER MENU STYLES --- */
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:50px;
+  padding:5px 15px 0px 15px;
+  color:#dd004b;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#dd004b;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:	#808080;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#8bb8e8; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#fff;}
+.menu a:hover{text-decoration:none; color:#8bb8e8;}
+
+/* --- END MOBILE/HAMBURGER MENU STYLES --- */
+
+.top-header {
+  display: flex;
+}
