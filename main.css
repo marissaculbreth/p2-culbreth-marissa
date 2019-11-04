@@ -89,3 +89,49 @@ ul li {
   width: 100%;
   height: 35vh;
 }
+
+.home-main {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  color: white;
+}
+
+.home-centers {
+  background-color: #8bb8e8;
+  padding: 12%;
+}
+
+.home-believe {
+  background-color: #dd004b;
+  padding: 12%;
+}
+
+.home-volunteer {
+  background-color: #f2a900;
+  padding: 12%;
+}
+
+.home-support {
+  background-color: #8bb8e8;
+  padding: 12%;
+}
+
+h1 {
+  font-size: 1.2rem;
+  text-align: center;
+  border: 2px solid white;
+  padding: 8%;
+  border-radius: 10%;
+}
+
+.believe-h1 {
+  background-color: #f2a900;
+}
+
+.volunteer-h1 {
+  background-color: #8bb8e8;
+}
+
+.support-h1 {
+  background-color: #dd004b;
+}
