@@ -36,6 +36,10 @@ ul li {
   list-style: none;
 }
 
+.donate-header-desktop {
+  display: none;
+}
+
 /* --- MOBILE/HAMBURGER MENU STYLES --- */
 
 .hamburger{
@@ -183,6 +187,62 @@ h1 {
 
 @media (min-width: 623px) {
 
+  .menu, .hamburger, .cross {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: block;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .desktop-menu ul li {
+    padding: 2% 3%;
+    margin: 0 5%;
+    color: #dd004b;
+    list-style: none;
+    font-size: 1rem;
+  }
+
+  .desktop-menu ul li a {
+    color: #dd004b;
+  }
+
+  .desktop-menu ul li a:hover {
+    color: #8bb8e8;
+  }
+
+  .desktop-ul {
+    display: flex;
+  }
+
+  .donate-header {
+    display: none;
+  }
+
+  .donate-header-desktop {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+    width: 15%;
+    height: 2%;
+    background: #dd004b;
+    border-radius: 17%;
+    padding: 2%;
+    align-items: flex-end;
+  }
+
+  .donate-header-desktop:hover {
+    background-color: #8bb8e8;
+  }
+
+  .pace-logo {
+    width: 12%;
+    margin-left: 2%;
+  }
+
   .home-image {
     height: 50vh;
   }
@@ -251,6 +311,14 @@ h1 {
 
 @media (min-width: 768px) {
 
+  .desktop-menu ul li {
+    font-size: 1.2rem;
+  }
+
+  .donate-header-desktop {
+    width: 10%;
+  }
+
   .home-image {
     height: 60vh;
   }
@@ -278,6 +346,11 @@ h1 {
 /* 910px media query */
 
 @media (min-width: 910px) {
+
+  .home-image {
+    height: 70vh;
+  }
+
   h1 {
     font-size: 1.3rem;
     padding: 3%;
