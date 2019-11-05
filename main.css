@@ -117,6 +117,7 @@ ul li {
 }
 
 h1 {
+  font-family: 'Lato', sans-serif;
   font-size: 1.2rem;
   text-align: center;
   border: 2px solid white;
@@ -134,6 +135,10 @@ h1 {
 
 .support-h1 {
   background-color: #dd004b;
+}
+
+.center-div, .believe-div, .volunteer-div-1, .volunteer-div-2, .support-div {
+  display: none;
 }
 
 /* Footer */
@@ -180,6 +185,61 @@ h1 {
 
   .home-image {
     height: 50vh;
+  }
+
+  .center-div, .believe-div, .volunteer-div-1, .volunteer-div-2, .support-div {
+    display: block;
+    padding: 5%;
+  }
+
+  .volunteer-div-1, .volunteer-div-2 {
+    text-align: center;
+    padding: 2%;
+  }
+
+  .home-centers, .home-believe, .home-volunteer {
+    display: flex;
+    padding: 3%;
+  }
+
+  .volunteer-h1 {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1rem;
+    padding: 3%;
+    height: 10vh;
+  }
+
+  .believe-h1 {
+    margin-top: 10%;
+  }
+
+  .home-support {
+    padding: 3%;
+  }
+
+  h1.support-h1 {
+    padding-bottom: 0;
+  }
+
+  .center-h2, .believe-h2, .volunteer-h2-1, .volunteer-h2-2, .support-h2 {
+    font-size: 1rem;
+  }
+
+  .center-p, .believe-p, .volunteer-p-1, .volunteer-p-2, .support-p {
+    font-size: 0.85rem;
+    padding-top: 1.5%;
+  }
+
+  button {
+    background-color: #dd004b;
+    color: white;
+    text-align: center;
+    padding: 3%;
+    margin-top: 2%;
+    border-radius: 2px solid;
   }
 
 }
