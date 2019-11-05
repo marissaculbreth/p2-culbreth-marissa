@@ -121,7 +121,7 @@ h1 {
   text-align: center;
   border: 2px solid white;
   padding: 8%;
-  border-radius: 10%;
+  border-radius: 6%;
 }
 
 .believe-h1 {
@@ -134,4 +134,61 @@ h1 {
 
 .support-h1 {
   background-color: #dd004b;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #dd004b;
+  padding: 5%;
+  display: flex;
+}
+
+.icon {
+  width: 25%;
+}
+
+.footer-logo {
+  width: 60%;
+  margin-top: 17%;
+}
+
+.footer-text, .footer-text-long {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 0.7rem;
+}
+
+.footer-text-long {
+  margin-top: 2%;
+}
+
+.left-footer {
+  width: 25%;
+}
+
+.right-footer {
+  width: 75%;
+}
+
+/* Footer */
+
+
+/* 623px media query */
+
+@media (min-width: 623px) {
+
+  .home-image {
+    height: 50vh;
+  }
+
+}
+
+
+/* 768px media query */
+
+@media (min-width: 768px) {
+  .home-image {
+    height: 60vh;
+  }
 }
