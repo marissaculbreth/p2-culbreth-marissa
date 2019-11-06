@@ -550,6 +550,13 @@ h1.mission-h1, h1.philosophy-h1 {
     width: 40%;
   }
 
+  .read-more {
+    font-size: 0.75rem;
+    padding: 4%;
+    margin-top: 6%;
+    border-radius: 2px solid;
+  }
+
   .footer {
     padding: 2%;
   }
