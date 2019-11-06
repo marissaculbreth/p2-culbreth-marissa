@@ -238,7 +238,7 @@ h1.mission-h1, h1.philosophy-h1 {
   text-decoration: underline;
 }
 
-.team-p {
+.team-p, .hide-p {
   font-family: 'Roboto', sans-serif;
   font-size: 0.7rem;
 }
@@ -278,6 +278,10 @@ h1.mission-h1, h1.philosophy-h1 {
 
 .read-more:hover {
   background-color: #8bb8e8;
+}
+
+.hide-p {
+  display: none;
 }
 
 /* Footer */
@@ -507,6 +511,14 @@ h1.mission-h1, h1.philosophy-h1 {
     display: flex;
   }
 
+  .left-contact {
+    width: 90%;
+  }
+
+  .right-contact {
+    width: 100%;
+  }
+
   .team-photo {
     width: 40%;
   }
@@ -516,7 +528,7 @@ h1.mission-h1, h1.philosophy-h1 {
     margin-top: 6%;
   }
 
-  .team-p {
+  .team-p, .hide-p {
     font-size: 0.7rem;
     margin-top: 4%;
   }
@@ -526,7 +538,11 @@ h1.mission-h1, h1.philosophy-h1 {
   }
 
   .contact-thresa {
-    margin-top: 10%;
+    margin-top: 45%;
+  }
+
+  .contact-teddy {
+    margin-top: 35%;
   }
 
   .mary-info, .thresa-info, .yessica-info, .teddy-info {
@@ -637,7 +653,7 @@ h1.mission-h1, h1.philosophy-h1 {
     font-size: 1rem;
   }
 
-  .team-p {
+  .team-p, .hide-p {
     font-size: 0.85rem;
   }
 
