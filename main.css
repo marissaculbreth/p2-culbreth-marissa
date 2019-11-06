@@ -191,6 +191,15 @@ h1.mission-h1, h1.philosophy-h1 {
   color: white;
 }
 
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info {
+  width: 40%;
+}
+
 .contact-h1, .contact-h2 {
   font-family: 'Lato', sans-serif;
 }
@@ -220,25 +229,55 @@ h1.mission-h1, h1.philosophy-h1 {
 
 .team-photo {
   width: 15%;
+  margin-left: 5%;
 }
 
 .team-h3 {
   font-family: 'Lato', sans-serif;
-  font-size: 1rem;
+  font-size: 0.775rem;
+  text-decoration: underline;
 }
 
 .team-p {
   font-family: 'Roboto', sans-serif;
-  font-size: 0.75rem;
-}
-
-.flex-photo {
-  display: flex;
-  flex-wrap: wrap;
+  font-size: 0.7rem;
 }
 
 .contact-team, .team-photo {
   padding: 2%;
+}
+
+.contact-team {
+  width: 100%;
+}
+
+.contact-mary, .contact-thresa, .contact-yessica, .contact-teddy {
+  display: flex;
+  padding: 1%;
+  margin-top: 5%;
+}
+
+.mary-info, .thresa-info, .yessica-info, .teddy-info {
+  margin-right: 5%;
+  width: 50%;
+}
+
+.team-photo {
+  width: 50%;
+}
+
+.read-more {
+  background-color: #dd004b;
+  color: white;
+  text-align: center;
+  font-size: 0.5rem;
+  padding: 2%;
+  margin-top: 4%;
+  border-radius: 2px solid;
+}
+
+.read-more:hover {
+  background-color: #8bb8e8;
 }
 
 /* Footer */
@@ -312,6 +351,10 @@ h1.mission-h1, h1.philosophy-h1 {
     display: flex;
   }
 
+  .header {
+    padding-bottom: 1%;
+  }
+
   .donate-header {
     display: none;
   }
@@ -326,8 +369,10 @@ h1.mission-h1, h1.philosophy-h1 {
     height: 2%;
     background: #dd004b;
     border-radius: 17%;
-    padding: 2%;
+    padding: 1%;
+    margin-top: 2%;
     align-items: flex-end;
+    margin-left: 10%;
   }
 
   .donate-header-desktop:hover {
@@ -427,14 +472,6 @@ h1.mission-h1, h1.philosophy-h1 {
     width: 45%;
   }
 
-  .contact-content {
-    display: flex;
-  }
-
-  .contact-info {
-    width: 40%;
-  }
-
   .icon {
     width: 15%;
   }
@@ -464,6 +501,37 @@ h1.mission-h1, h1.philosophy-h1 {
 
   .about-image {
     height: 55vh;
+  }
+
+  .contact-team {
+    display: flex;
+  }
+
+  .team-photo {
+    width: 40%;
+  }
+
+  .team-h3 {
+    font-size: 0.8rem;
+    margin-top: 6%;
+  }
+
+  .team-p {
+    font-size: 0.7rem;
+    margin-top: 4%;
+  }
+
+  .contact-mary, .contact-thresa, .contact-yessica, .contact-teddy {
+    margin-top: 0%;
+  }
+
+  .contact-thresa {
+    margin-top: 10%;
+  }
+
+  .mary-info, .thresa-info, .yessica-info, .teddy-info {
+    margin: 0%;
+    width: 40%;
   }
 
   .footer {
@@ -542,6 +610,35 @@ h1.mission-h1, h1.philosophy-h1 {
 
   .values-p {
     font-size: 1rem;
+  }
+
+  .contact-h1 {
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  .contact-h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-p {
+    font-size: 0.9rem;
+  }
+
+  .contact-ptags {
+    padding-bottom: 4%;
+  }
+
+  .team-photo {
+    width: 50%;
+  }
+
+  .team-h3 {
+    font-size: 1rem;
+  }
+
+  .team-p {
+    font-size: 0.85rem;
   }
 
   .footer-logo {
