@@ -238,7 +238,7 @@ h1.mission-h1, h1.philosophy-h1 {
   text-decoration: underline;
 }
 
-.team-p, .hide-p {
+.team-p, .more {
   font-family: 'Roboto', sans-serif;
   font-size: 0.7rem;
 }
@@ -266,7 +266,7 @@ h1.mission-h1, h1.philosophy-h1 {
   width: 50%;
 }
 
-.read-more {
+.readMore {
   background-color: #dd004b;
   color: white;
   text-align: center;
@@ -276,11 +276,11 @@ h1.mission-h1, h1.philosophy-h1 {
   border-radius: 2px solid;
 }
 
-.read-more:hover {
+.readMore:hover {
   background-color: #8bb8e8;
 }
 
-.hide-p {
+.more {
   display: none;
 }
 
@@ -528,7 +528,7 @@ h1.mission-h1, h1.philosophy-h1 {
     margin-top: 6%;
   }
 
-  .team-p, .hide-p {
+  .team-p, .more {
     font-size: 0.7rem;
     margin-top: 4%;
   }
@@ -550,7 +550,7 @@ h1.mission-h1, h1.philosophy-h1 {
     width: 40%;
   }
 
-  .read-more {
+  .readMore {
     font-size: 0.75rem;
     padding: 4%;
     margin-top: 6%;
@@ -660,7 +660,7 @@ h1.mission-h1, h1.philosophy-h1 {
     font-size: 1rem;
   }
 
-  .team-p, .hide-p {
+  .team-p, .more {
     font-size: 0.85rem;
   }
 
