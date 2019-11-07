@@ -10,57 +10,40 @@ icon.addEventListener("click", toggleMenu);
 
 
 // Accordion on about page
-var coll = document.getElementsByClassName("collapsible");
-var i;
+var accordions = document.getElementsByClassName("accordion");
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+for (var i = 0; i < accordions.length; i++) {
+  accordions[i].onclick = function() {
+    this.classList.toggle('is-open');
+
     var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
+    if (content.style.maxHeight) {
+      // accordion is currently open, so close it
+      content.style.maxHeight = null;
     } else {
-      content.style.display = "block";
+      // accordion is currently closed, so open it
+      content.style.maxHeight = content.scrollHeight + "px";
     }
-  });
+  }
 }
 
 
 // Read more buttons on contact page
-var i = 0;
+function myFunction() {
+  var dots = document.getElementsByClassName("dots");
+  var moreText = document.getElementsByClassName("more");
+  var btnText = document.getElementsByClassName("myBtn");
 
-function read() {
-  if (!i) {
-    document.getElementsByClassName("more").style.display = "none";
-    document.getElementsByClassName("dots").style.display = "inline";
-    document.getElementsByClassName("readMore").innerHTML="READ LESS";
-    i=1;
-  }
-  else {
-    document.getElementsByClassName("more").style.display = "inline";
-    document.getElementsByClassName("dots").style.display = "none";
-    document.getElementsByClassName("readMore").innerHTML="READ MORE";
-    i=0;
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
   }
 }
-
-
-
-// function myFunction() {
-//   var dots = document.getElementById("dots");
-//   var moreText = document.getElementById("more");
-//   var btnText = document.getElementById("myBtn");
-//
-//   if (dots.style.display === "none") {
-//     dots.style.display = "inline";
-//     btnText.innerHTML = "Read more";
-//     moreText.style.display = "none";
-//   } else {
-//     dots.style.display = "none";
-//     btnText.innerHTML = "Read less";
-//     moreText.style.display = "inline";
-//   }
-// }
 
 
 // API on contact page
