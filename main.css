@@ -4,10 +4,14 @@
   border: 0;
 }
 
+.header {
+  width: 100%;
+}
+
 .pace-logo {
-  width: 25%;
-  padding: 3%;
-  margin-left: 3%;
+  width: 20%;
+  padding: 2%;
+  margin-left: 2%;
 }
 
 .donate-header {
@@ -20,70 +24,40 @@
   background: #dd004b;
   border-radius: 17%;
   padding: 2%;
-  margin-top: 13%;
-  margin-left: 12%;
+  margin: auto;
 }
 
 .menu {
   font-family: 'Lato', sans-serif;
+  align-items: flex-end;
+  margin-right: 2%;
+}
+
+.menu ul li {
+  list-style-type: none;
+}
+
+.menu ul li a {
+  color: black;
+  background-color: #dd004b;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  background-color: #8bb8e8;
+}
+
+.mobileMenu {
+  display: none !important;
 }
 
 .desktop-menu {
   display: none;
 }
 
-ul li {
-  list-style: none;
-}
-
 .donate-header-desktop {
   display: none;
 }
-
-/* --- MOBILE/HAMBURGER MENU STYLES --- */
-
-.hamburger{
-  background:none;
-  position:absolute;
-  top:0;
-  right:0;
-  line-height:50px;
-  padding:5px 15px 0px 15px;
-  color:#dd004b;
-  border:0;
-  font-size:1.4em;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-}
-
-.cross{
-  background:none;
-  position:absolute;
-  top:0px;
-  right:0;
-  padding:7px 15px 0px 15px;
-  color:#dd004b;
-  border:0;
-  font-size:3em;
-  line-height:65px;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-}
-
-.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:	#808080;  position:absolute; text-align:center; font-size:12px;}
-.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
-.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-.menu li:hover{display: block;    background:#8bb8e8; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-.menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
-.menu ul li a:hover {  color: #666; text-decoration:none;}
-.menu a{text-decoration:none; color:#fff;}
-.menu a:hover{text-decoration:none; color:#8bb8e8;}
-
-/* --- END MOBILE/HAMBURGER MENU STYLES --- */
 
 .top-header {
   display: flex;
@@ -331,7 +305,7 @@ h1.mission-h1, h1.philosophy-h1 {
 
 @media (min-width: 623px) {
 
-  .menu, .hamburger, .cross {
+  .menu {
     display: none;
   }
 
@@ -616,6 +590,10 @@ h1.mission-h1, h1.philosophy-h1 {
 /* 910px media query */
 
 @media (min-width: 910px) {
+
+  .pace-logo {
+    width: 10%;
+  }
 
   .home-image {
     height: 70vh;
