@@ -149,7 +149,6 @@ button.accordion {
   width: 100%;
   background-color: #f2a900;
   border: 2px solid #dd004b;
-  text-align: center;
   padding: 15px 20px;
   font-size: 1rem;
   color: white;
@@ -227,7 +226,7 @@ button.accordion:hover, button.accordion.is-open {
   margin-left: 5%;
 }
 
-.team- {
+.team-h3 {
   font-family: 'Lato', sans-serif;
   font-size: 0.775rem;
   text-decoration: underline;
@@ -252,7 +251,7 @@ button.accordion:hover, button.accordion.is-open {
   margin-top: 5%;
 }
 
-.mary-info, .thresa-info, .yessica-info, .teddy-info {
+.team-info {
   margin-right: 5%;
   width: 50%;
 }
@@ -277,6 +276,10 @@ button.accordion:hover, button.accordion.is-open {
 
 .more {
   display: none;
+}
+
+.show {
+  display: block !important;
 }
 
 /* Footer */
@@ -533,7 +536,7 @@ button.accordion:hover, button.accordion.is-open {
     margin-top: 35%;
   }
 
-  .mary-info, .thresa-info, .yessica-info, .teddy-info {
+  .team-info {
     margin: 0%;
     width: 40%;
   }

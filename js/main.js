@@ -29,21 +29,42 @@ for (var i = 0; i < accordions.length; i++) {
 
 
 // Read more buttons on contact page
-function myFunction() {
-  var dots = document.getElementsByClassName("dots");
-  var moreText = document.getElementsByClassName("more");
-  var btnText = document.getElementsByClassName("myBtn");
+var readMoreBtns = document.querySelectorAll(".myBtn");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
+readMoreBtns.forEach(function() {
+  this.addEventListener("click", changeClass);
+})
+
+function changeClass(event) {
+
+  let btn = event.target,
+  context = event.target.parentNode,
+  toggleEl = context.querySelector(".more");
+
+  if (toggleEl.classList.contains("show")) {
+    btn.innerHTML = "READ LESS";
   } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
+    btn.innerHTML = "READ MORE";
   }
+
 }
+
+
+// function myFunction() {
+//   var dots = document.getElementsByClassName("dots");
+//   var moreText = document.getElementsByClassName("more");
+//   var btnText = document.getElementsByClassName("myBtn");
+//
+//   if (dots.style.display === "none") {
+//     dots.style.display = "inline";
+//     btnText.innerHTML = "Read more";
+//     moreText.style.display = "none";
+//   } else {
+//     dots.style.display = "none";
+//     btnText.innerHTML = "Read less";
+//     moreText.style.display = "inline";
+//   }
+// }
 
 
 // API on contact page
