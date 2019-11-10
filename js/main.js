@@ -68,3 +68,33 @@ function changeClass(event) {
 
 
 // API on contact page
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var apiResult = JSON.parse(this.responseText);
+
+        //Code Dealing With The API Data Goes Here
+        var quoteInsert = document.querySelectorAll(".contact-content .api-content p");
+
+
+        var unirest = require("unirest");
+
+        var req = unirest("GET", "https://timshim-quotes-v1.p.rapidapi.com/quotes");
+
+        req.headers({
+        	"x-rapidapi-host": "timshim-quotes-v1.p.rapidapi.com",
+        	"x-rapidapi-key": "48f6ebcbf1msh1d031a64900e7c9p15c494jsn6519cca38157"
+        });
+
+
+        req.end(function (res) {
+        	if (res.error) throw new Error(res.error);
+
+        	console.log(res.body);
+        });
+
+    }
+};
+
+xmlhttp.open('GET', 'http://rapidapi.com/timshim/api/quotes', true);
+xmlhttp.send();
